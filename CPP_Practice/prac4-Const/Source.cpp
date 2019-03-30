@@ -87,7 +87,7 @@ int main(void)
 	}
 
 	// タバコ箱の生成
-	// Tabacco box();
+	// Tabacco box;
 	Tabacco box(value != 0 ? value : NULL);
 
 	// 5回使用する
