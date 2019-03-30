@@ -4,18 +4,20 @@
 #include <string>
 using namespace std;
 
+// 猫を鳴かせるための簡単なクラス
 class Neko
 {
-private:
 	string name;	// 猫の名前
 
 public:
-	// コンストラクタ
-	Neko(string s) : name(s) {}
+	Neko(string s);			// コンストラクタ
 
-	// 鳴き声を発するメンバ関数
-	void naku() const { cout << name << " : Meow..." << endl; }
+	void naku(void) const;	// 猫を鳴かせるメンバ関数
 };
+
+// 関数定義
+Neko::Neko(string s) :name(s) {}
+void Neko::naku(void) const { cout << name << " : Meow..." << endl; }
 
 int main(void)
 {
