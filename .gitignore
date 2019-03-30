@@ -1,0 +1,7 @@
+﻿################################################################################
+# この .gitignore ファイルは Microsoft(R) Visual Studio によって自動的に作成されました。
+################################################################################
+
+/.vs
+/CPP_Practice/.vs/CPP_Practice/v15/Browse.VC.opendb
+/CPP_Practice/.vs/CPP_Practice/v15/Browse.VC.db
