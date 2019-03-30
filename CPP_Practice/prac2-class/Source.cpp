@@ -23,7 +23,12 @@ public:
 
 int main(void)
 {
-	Neko MyCat("’ƒXŠÛ");
+	string nekoName;
+
+	cout << "”L‚Ì–¼‘O‚ğ“ü—Í" << endl;
+	cin >> nekoName;
+
+	Neko MyCat(nekoName);
 
 	MyCat.naku();	// ”L‚ğ–Â‚©‚¹‚é
 
