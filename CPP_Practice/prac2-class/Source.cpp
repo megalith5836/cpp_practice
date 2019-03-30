@@ -10,15 +10,11 @@ private:
 	string name;	// 猫の名前
 
 public:
-	Neko(string s)	// コンストラクタ
-	{
-		name = s;
-	}
+	// コンストラクタ
+	Neko(string s) : name(s) {}
 
-	void naku()		// 鳴き声を発する
-	{
-		cout << name << " : Meow..." << endl;
-	}
+	// 鳴き声を発するメンバ関数
+	void naku() const { cout << name << " : Meow..." << endl; }
 };
 
 int main(void)
