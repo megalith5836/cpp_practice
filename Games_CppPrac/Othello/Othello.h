@@ -29,14 +29,23 @@ class Othello
 		whiteTurn
 	};
 
-
-	bool canPlace(int, int);	// マスに石を置けるかのチェック関数
-	void checkStone(void);		// フィールド上の石数をチェックする関数
+	enum Direction {	// 各方向を方角で表す列挙型
+		N = 0x01,
+		NE = 0x02,
+		E = 0x04,
+		SE = 0x08,
+		S = 0x10,
+		SW = 0x20,
+		W = 0x40,
+		NW = 0x80
+	};
 	
 public:
 	Othello(void);
 
-	void drawField(void);		// フィールド描画関数
-	bool putStone(int, int);	// 指定座標に石を配置する関数
-
+	void drawField(void);				// フィールド描画関数
+	bool putStone(int, int);			// 指定座標に石を配置する関数
+	bool canPlace(int, int);			// マスに石を置けるかのチェック関数
+	unsigned char lineCheck(int, int);	// 指定座標を中心として8方向チェックを行う関数
+	void checkStone(void);				// フィールド上の石数をチェックする関数
 };
